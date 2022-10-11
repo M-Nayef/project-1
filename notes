@@ -1,0 +1,25 @@
+
+ min width for content 300px
+ ----------------------
+ images & text input : can't had before or after.
+ ============
+ ====flex==== 
+ ============
+ ---------------------------
+ [1] flex grwo let our element to take the extra space as it can  ;
+ thats only when there is available space in the parent 
+ by default felx grow =0 .
+ flex grwo 1 => all the space 
+ flex grwo 2 => twice the regular element space
+ flex grwo 3 => 3 times the regular element space
+ ---------------------------
+ [2] flex basies  : means " please try to take this width " when shrink is adefault(1), 
+ but when shrink 0 the element will take the basies even if it expand out of the parent
+ -----------------------
+ [3] flex shrink means the minimum area is the content area by default (1)
+ =================================
+ flex : [max] [min] [ideal size]
+
+
+ solv services problem on width=1100px , the problem is 290 for each col => 3col = 600 + 270 => 770px + 2*30 gap => 830px in small screen(min 767 -> container 750px) not enugh so grid cant add 3 columns, but in medium container 970px -> grid adds therd col
+====================================================   300 for each col -> 3col = 900                + 60 gap   => 960px + 30 px (container padding left & right ) in small container cant fit three columns also in medium screen cant fit because container width is 970px 
